@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+    color: white;
+
+}
+a{
+color: white;
+text-decoration: none;
+
+}
+
+ul {
+    list-style: none;
+
+}
+.nav-bar{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.nav-bar ul{
+    display: flex;
+    margin-right: 80px;
+}
+.nav-bar ul a{
+    margin-right: 20px;
+    position: relative;
+   
+}
+.nav-bar ul a::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: 0.5s ;
+    background-color: white;
+}
+
+.nav-bar ul a:hover:after{
+   
+    transform: scaleX(1);
+}
+.text{
+    position: absolute;
+    bottom: 300px;
+    left: 150px;
+    width: 50%;
+   
+}
+.text p{
+    line-height: 24px;
+    font-size: medium;
+    font-weight: bolder;
+}
